@@ -125,5 +125,6 @@
 }
 .endres{
     color: black;
+    font-size: 3rem;
     -webkit-text-stroke: 2px white;
 }
