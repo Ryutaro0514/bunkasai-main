@@ -110,7 +110,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const result = document.querySelector(".endres")
     let timer = null
     //             ↓この値が分を管理
-    let timeLeft = 1 * 10
+    let timeLeft = 2.5 * 60
 
     function updateDisplay() {
         const minutes = String(Math.floor(timeLeft / 60)).padStart(2, '0')
@@ -169,7 +169,7 @@ document.addEventListener('DOMContentLoaded', () => {
             timer = null
         }
         //         ↓ここで値が分を管理
-        timeLeft = 1 * 10
+        timeLeft = 2.5 * 60
         updateDisplay()
         startStopBtn.textContent = 'スタート'
     });
