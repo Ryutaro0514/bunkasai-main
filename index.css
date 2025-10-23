@@ -1,0 +1,129 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 150%;
+}
+
+.playall {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.scor {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
+
+.playername {
+    margin-top: 2%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
+
+.timer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.playerA,
+.playerB {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+.pointA,
+.pointB {
+    font-size: 3.5rem;
+}
+
+.btn {
+    margin: 4%;
+}
+
+.timer-btn {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.timer {
+    width: 80%;
+}
+
+.reset {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.botan {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.playb {
+    width: 120%;
+}
+
+.time {
+    font-size: 3.5rem;
+}
+
+.end-screen {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    font-size: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+    background: linear-gradient(270deg,
+            red,
+            orange,
+            yellow,
+            green,
+            blue,
+            indigo,
+            violet,
+            red);
+    animation: rainbow-scroll 10s linear infinite;
+    flex-direction: column;
+}
+
+@keyframes rainbow-scroll {
+    0% {
+        background-position: 0% 0;
+    }
+
+    100% {
+        background-position: 100% 0;
+    }
+}
+/* 曲を流す */
+.res{
+    width: 40%;
+}
+.endres{
+    color: black;
+    -webkit-text-stroke: 2px white;
+}
