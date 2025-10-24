@@ -127,21 +127,17 @@ document.addEventListener('DOMContentLoaded', () => {
                 } else {
                     clearInterval(timer)
                     timer = null;
+                    const sound = document.querySelector(".sound")
+                    sound.play()
                     startStopBtn.textContent = 'スタート'
                     if (A > B) {
                         result.textContent = `${currentA}の勝ち`
-                        const sound = document.querySelector(".sound")
-                        sound.play()
                     }
                     if (A < B) {
                         result.textContent = `${currentB}の勝ち`
-                        const sound = document.querySelector(".sound")
-                        sound.play()
                     }
                     if (A == B) {
                         result.textContent = "引き分け"
-                        const sound = document.querySelector(".sound")
-                        sound.play()
                     }
                     document.querySelector(".end-screen").style.display = 'flex'
                 }
